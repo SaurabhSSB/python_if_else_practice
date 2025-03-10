@@ -6,10 +6,14 @@ The string is taken as input from the user and evaluated based on whether the th
 # Taking input from user
 char:str= input("Enter a word:- ")
 
-# Checking if the character is vowel or consonant
-if char[-3].lower() in "aeiou":
-    # Displaying that the 3rd character is vowel
-    print(f"Third character of {char} from last is a vowel.")
+# Check the length of the string
+if len(char)<3:
+    print(f"The given string {char} is too small.")
 else:
-    # Displaying that the 3rd character is consonant
-    print(f"Third character of {char} from last is consonant.")
+    # Checking if the character is vowel or consonant
+    if char[-3].lower() in "aeiou":
+        # Displaying that the 3rd character is a vowel
+        print(f"Third character of {char} from last is a vowel.")
+    else:
+        # Displaying that the 3rd character is consonant
+        print(f"Third character of {char} from last is consonant.")
