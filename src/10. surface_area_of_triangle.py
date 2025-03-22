@@ -1,5 +1,6 @@
 """
 Program to calculate the surface area of a triangle.
+
 Prompts the user for the lengths of the three sides and computes the surface area of triangle using:
 √[s(s-a)(s-b)(s-c)]
 s is semi-perimeter (a+b+c)/2.
